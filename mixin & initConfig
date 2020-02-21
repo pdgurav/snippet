@@ -60,3 +60,9 @@ class Store extends Base{
 let store1 = new Store({paging:true});
 let store2 = new Store({data:[{s: 89}]});
 let store3 = new Store();
+store3.on("load", function(store){
+//event handler
+})
+store3.add({s: 89})
+// event handler will be called
+
