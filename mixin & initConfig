@@ -42,8 +42,10 @@ class Base {
 
 }
 class Store extends Base{
+    mixin = [{as: 89}]
     constructor(config) {
-        super()
+        super(config)
+        Object.assign(Store.prototype, ...this.mixin)
         this.initConfig(config || {})
     }
     config = {
@@ -56,6 +58,8 @@ class Store extends Base{
         this.fireEvent("load", this)
     }
 }
+
+
 
 let store1 = new Store({paging:true});
 let store2 = new Store({data:[{s: 89}]});
