@@ -42,7 +42,7 @@ class Base {
 
 }
 class Store extends Base{
-    mixin = [{as: 89}]
+    mixin = [{getSomething: function(){return "something"}}]
     constructor(config) {
         super(config)
         Object.assign(Store.prototype, ...this.mixin)
