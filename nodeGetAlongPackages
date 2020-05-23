@@ -3,3 +3,9 @@ minimist, to process argv
 progress, to show progess bars
 readline, readline-sync, inquirer, accepting args in command line 1 by1
 npx node@10.2 -v
+
+
+
+process.exit(1)
+process.env
+process.argv
