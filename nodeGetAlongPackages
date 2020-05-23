@@ -39,3 +39,11 @@ after the current operation ends. This means it will always execute before setTi
 
 A setTimeout() callback with a 0ms delay is very similar to setImmediate(). 
 The execution order will depend on various factors, but they will be both run in the next iteration of the event loop.
+===================================================================================
+setInterval starts a function every n milliseconds, without any consideration about when a function finished its execution.
+
+1) setTimeout
+2) setInterval
+3) setImmediate
+4) process.nextTick
+
