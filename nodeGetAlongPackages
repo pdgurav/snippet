@@ -3,9 +3,17 @@ minimist, to process argv
 progress, to show progess bars
 readline, readline-sync, inquirer, accepting args in command line 1 by1
 npx node@10.2 -v
+=============================================================================
 
 
-
-process.exit(1)
+process.exit(1) //"STIGTERM", "STIGKILL"
 process.env
 process.argv
+=============================================================================
+process.nextTick(); //Every time the event loop takes a full trip, we call it a tick.
+When we pass a function to process.nextTick(), we instruct the engine to invoke this function at the end of the current operation, before the next event loop tick starts:
+
+process.nextTick(() => {
+  //do something
+})
+=============================================================================
