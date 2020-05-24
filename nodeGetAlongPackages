@@ -1,3 +1,5 @@
+events, http, fs
+
 chalk, colored cmd
 minimist, to process argv
 progress, to show progess bars
