@@ -1,4 +1,4 @@
-events, http, fs
+events, http, fs, fs-extra,path, os,express,errors,process
 
 chalk, colored cmd
 minimist, to process argv
